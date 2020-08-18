@@ -10,7 +10,7 @@ ms.reviewer: minewiskan
 ms.custom: references_regions 
 
 ---
-# Connecting to servers
+# Connecting to servers for NCR Demo
 
 This article describes connecting to a server by using data modeling and management applications like SQL Server Management Studio (SSMS) or Visual Studio with Analysis Services projects, or with client reporting applications like Microsoft Excel, Power BI Desktop, or custom applications. Connections to Azure Analysis Services use HTTPS.
 
@@ -28,7 +28,7 @@ All connections to a server, regardless of type, require updated AMO, ADOMD.NET,
 When you create an Analysis Services server in Azure, you specify a unique name and the region where the server is to be created. When specifying the server name in a connection, the server naming scheme is:
 
 ```
-<protocol>://<region>/<servername>
+<protocol>://<region>/<servername>/NCR
 ```
  Where protocol is string **asazure**, region is the Uri where the server was created (for example, westus.asazure.windows.net) and servername is the name of your unique server within the region.
 
